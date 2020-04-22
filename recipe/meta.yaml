@@ -1,6 +1,6 @@
 {% set name = "WTForms" %}
-{% set version = "2.2.1" %}
-{% set sha256 = "0cdbac3e7f6878086c334aa25dc5a33869a3954e9d1e015130d65a69309b3b61" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "8f30dbcb9cfad9e8f663ad8480aba7c42a41d8beebe9c6fd506ced514f3fd127" %}
 
 package:
   name: {{ name|lower }}
@@ -14,14 +14,16 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
+    - babel >=2.6.0
   run:
     - python
+    - markupsafe
 
 test:
   imports:
@@ -32,13 +34,14 @@ test:
 
 about:
   home: http://wtforms.simplecodes.com
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
-  summary: 'A flexible forms validation and rendering library for Python'
+  summary: A flexible forms validation and rendering library for Python
   doc_url: http://wtforms.readthedocs.io
   dev_url: https://github.com/wtforms/wtforms
 
 extra:
   recipe-maintainers:
     - mcs07
+    - synapticarbors
