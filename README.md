@@ -3,7 +3,7 @@ About wtforms
 
 Home: http://wtforms.simplecodes.com
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
@@ -117,4 +117,5 @@ Feedstock Maintainers
 =====================
 
 * [@mcs07](https://github.com/mcs07/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
