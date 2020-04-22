@@ -17,11 +17,13 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
+    - babel >=2.6.0
   run:
     - python
+    - markupsafe
 
 test:
   imports:
@@ -32,7 +34,7 @@ test:
 
 about:
   home: http://wtforms.simplecodes.com
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: A flexible forms validation and rendering library for Python
@@ -42,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - mcs07
+    - synapticarbors
