@@ -5,7 +5,7 @@ Home: http://wtforms.simplecodes.com
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A flexible forms validation and rendering library for Python
 
