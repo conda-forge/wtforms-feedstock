@@ -1,6 +1,6 @@
 {% set name = "WTForms" %}
-{% set version = "2.3.2" %}
-{% set sha256 = "715ebd303f47384bf6468fd9dfff52c6acc400e71204df8acfa6ef7bf40e1c27" %}
+{% set version = "2.3.3" %}
+{% set sha256 = "81195de0ac94fbc8368abbaf9197b88c4f3ffd6c2719b5bf5fc9da744f3d829c" %}
 
 package:
   name: {{ name|lower }}
