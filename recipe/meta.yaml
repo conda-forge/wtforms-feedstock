@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python 2.7|>=3.5
     - pip
     - babel >=2.6.0
   run:
-    - python >=3.5
+    - python 2.7|>=3.5
     - markupsafe
 
 test:
