@@ -1,15 +1,13 @@
-{% set name = "WTForms" %}
-{% set version = "3.0.1" %}
-{% set sha256 = "6b351bbb12dd58af57ffef05bc78425d08d1914e0fd68ee14143b7ade023c5bc" %}
+{% set name = "wtforms" %}
+{% set version = "3.1.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: f8d76180d7239c94c6322f7990ae1216dae3659b7aa1cee94b6318bdffb474b9
 
 build:
   noarch: python
@@ -18,22 +16,24 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
+    - hatchling
     - babel >=2.6.0
   run:
-    - python >=3.7
+    - python >=3.8
     - markupsafe
 
 test:
   imports:
     - wtforms
-    - wtforms.csrf
-    - wtforms.fields
-    - wtforms.widgets
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
-  home: http://wtforms.simplecodes.com
+  home: https://github.com/wtforms/wtforms/
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
@@ -45,3 +45,4 @@ extra:
   recipe-maintainers:
     - mcs07
     - synapticarbors
+    - thewchan
