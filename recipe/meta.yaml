@@ -16,12 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - hatchling
     - babel >=2.6.0
+    - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - markupsafe
 
 test:
