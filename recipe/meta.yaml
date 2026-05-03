@@ -1,5 +1,5 @@
 {% set name = "wtforms" %}
-{% set version = "3.2.1" %}
+{% set version = "3.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: df3e6b70f3192e92623128123ec8dca3067df9cfadd43d59681e210cfb8d4682
+  sha256: 7b00c73f8670f35d4edb0293dcd81b980528bee72fd662b182aaba27ae570b93
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
