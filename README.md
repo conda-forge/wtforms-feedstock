@@ -11,7 +11,7 @@ Summary: A flexible forms validation and rendering library for Python
 
 Development: https://github.com/wtforms/wtforms
 
-Documentation: http://wtforms.readthedocs.io
+Documentation: http://wtforms.readthedocs.io/
 
 Current build status
 ====================
