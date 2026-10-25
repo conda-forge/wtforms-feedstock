@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.3.0"
+  version: "3.3.1"
 
 package:
   name: wtforms
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/w/wtforms/wtforms-${{ version }}.tar.gz
-  sha256: efbc626b0b68d3bcb77822e0eceb995f56c5e9d0aeb4220b9dc2fc9f03e7e1ed
+  sha256: 9d10ccb5740290c9ae6673522d87bcae3b669cf0cb4e4584aee229b4694af10c
 
 build:
   number: 0
